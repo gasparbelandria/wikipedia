@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/stylevzla.css" title="" type="text/css" media="screen" charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.9.0.min.js" charset="utf-8"></script>
+		<script src="js/GilaConnector.v3.js" charset="utf-8"></script>
+		<script src="js/app.js" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />	
+
+
+		<link rel="stylesheet" href="http://bits.wikimedia.org/es.wikipedia.org/load.php?debug=false&amp;lang=es&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+		<link rel="stylesheet" href="http://bits.wikimedia.org/es.wikipedia.org/load.php?debug=false&amp;lang=es&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />	
+
+
+		<link rel="stylesheet" href="http://bits.wikimedia.org/it.wikipedia.org/load.php?debug=false&amp;lang=it&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+		<link rel="stylesheet" href="http://bits.wikimedia.org/it.wikipedia.org/load.php?debug=false&amp;lang=it&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />	
+
+	</head>
+	<body>
+		<div id="search">
+			<div class="yt-grid-box" id="yt-masthead-container">
+				<div id="yt-masthead">    
+					<div id="logo-container">
+					<div id="logo"></div>
+				</div>
+				<div id="yt-masthead-content">
+					<span id="masthead-upload-button-group">
+						<select id="search-db" class=" yt-uix-button yt-uix-button-primary">
+							<option value="en">English</option>
+							<option value="es">Español</option>
+							<option value="ru">Русский</option>
+							<option value="it">Italiano</option>
+							<option value="pt">Português</option>
+							<option value="ja">日本語</option>
+							<option value="de">Deutsch</option>
+							<option value="fr">Français</option>
+							<option value="pl">Polski</option>
+							<option value="zh">中文</option>
+						</select>
+					</span>
+	                <span id="masthead-upload-button-group">
+	                    <a class="yt-uix-button yt-uix-sessionlink yt-uix-button-default"><span class="yt-uix-button-content" id="moreTopics">More Topics</span></a>
+	                    <a class="yt-uix-button yt-uix-sessionlink yt-uix-button-default"><span class="yt-uix-button-content" id="moreHistory">History</span></a>
+	                    <a class="yt-uix-button yt-uix-sessionlink yt-uix-button-default"><span class="yt-uix-button-content" id="moreHistoryBack">Back</span></a>
+	                    <a class="yt-uix-button yt-uix-sessionlink yt-uix-button-default"><span class="yt-uix-button-content" id="moreHistoryForward">Forward</span></a>
+	                </span>
+					<div class="search-form consolidated-form" id="masthead-search">
+						<button role="button" id="search-btn" type="button" class="search-btn-component search-button yt-uix-button yt-uix-button-default" style="margin-top: 3px;"><span class="yt-uix-button-content">Search </span></button>
+						<div class="masthead-search-terms-border " id="masthead-search-terms" style="top: 3px;">
+							<label>
+								<input type="text" title="Enter keywords here" tabindex="1" value="" name="search-text" class="search-term yt-uix-form-input-bidi" id="search-text" placeholder="Enter keywords here" style="outline: medium none;">
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Wikipedia idPage / choose formar is hide -->
+			<input type="hidden" id="idPage" />
+			<input type="hidden" id="search-format" value="html" />
+		</div>		
+		<div id="detailTopics" style="clear:both; display:none;">
+			<div id="search_results">
+				<div class="primary-col">
+					<ol>    
+						<li class="yt-lockup2"></li>
+					</ol>
+				</div>
+			</div>    	
+		</div>
+		<div id="detailHistory" style="clear:both; display:none;">
+			<div id="search_results">
+				<div class="primary-col">
+					<ol>    
+						<li class="yt-lockup2"></li>
+					</ol>
+				</div>
+			</div>    	
+		</div>
+		<!-- Wikipedia content is here  -->
+		<div id="contentWiki" style="clear:both; padding:10px; margin:100;"></div>
+	</body>
+</html>
