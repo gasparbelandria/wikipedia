@@ -5,7 +5,7 @@ This plugin in Javascript performs a search in Wikipedia API, which is explained
 [http://www.mediawiki.org/wiki/API:Main_page](http://www.mediawiki.org/wiki/API:Main_page)
 
 ## You can see it running here:
-[http://gasparbelandria.com/wikipedia/](http://gasparbelandria.com/wikipedia/)
+[http://backboneros.com/wikipedia/](http://backboneros.com/wikipedia/)
 
 ## Features of the plugin:
 * You can choose between more popular database of Wikipedia, I want to clarify that Wikipedia does not work with "languages​​", for this reason it is possible that if you search for example: "massachusetts" on "English" Database, may be different to  "Spanish" and may sometimes not be found in other Databases.
